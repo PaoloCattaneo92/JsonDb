@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>JsonDb</Title>
+    <Authors>Paolo Cattaneo</Authors>
+    <Company>Paolo Cattaneo</Company>
+    <Description>Simplest database ever (database as json files in a data folder)</Description>
+    <Copyright>Paolo Cattaneo</Copyright>
+    <PackageProjectUrl>https://github.com/PaoloCattaneo92/JsonDb</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PaoloCattaneo92/JsonDb</RepositoryUrl>
+    <PackageTags>json, database, easy, simple</PackageTags>
+    <PackageId>SimpleJsonDb</PackageId>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
