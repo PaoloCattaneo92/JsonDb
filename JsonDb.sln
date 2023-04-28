@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonDb", "JsonDb\JsonDb.csproj", "{4C9CBEFF-57F6-4479-BEB0-B17386A2E1B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDb.Example", "JsonDb.Example\JsonDb.Example.csproj", "{B9D803CB-C0D9-46EC-BB73-2481E0106F2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonDb.Example", "JsonDb.Example\JsonDb.Example.csproj", "{B9D803CB-C0D9-46EC-BB73-2481E0106F2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDb.Test", "JsonDb.Test\JsonDb.Test.csproj", "{1910116F-C912-4C70-84B7-FD56C8047ECF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B9D803CB-C0D9-46EC-BB73-2481E0106F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9D803CB-C0D9-46EC-BB73-2481E0106F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9D803CB-C0D9-46EC-BB73-2481E0106F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1910116F-C912-4C70-84B7-FD56C8047ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1910116F-C912-4C70-84B7-FD56C8047ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1910116F-C912-4C70-84B7-FD56C8047ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1910116F-C912-4C70-84B7-FD56C8047ECF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

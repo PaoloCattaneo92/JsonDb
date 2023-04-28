@@ -21,8 +21,9 @@ public class JsonContext
         }
     }
 
-    protected static string NameOfFile<V>() => typeof(V).Name.ToLower() + ".json";
-    
+    public static string NameOfFile<V>() => typeof(V).Name.ToLower() + ".json";
+    public string FullNameOfFile<V>() => Path.Combine(DataFolder, NameOfFile<V>());
+
     public IEnumerable<V> Get<V>()
     {
         var file = Path.Combine(DataFolder, NameOfFile<V>());
@@ -122,9 +123,18 @@ public class JsonContext
         ApplyChanges(newList);
     }
 
+    public void Drop<V>()
+    {
+        var file = FullNameOfFile<V>();
+        if (File.Exists(file))
+        {
+            File.Delete(file);
+        }
+    }
+
     protected void ApplyChanges<V>(IEnumerable<V> values)
     {
-        var file = Path.Combine(DataFolder, NameOfFile<V>());
+        var file = FullNameOfFile<V>();
         if (!File.Exists(file))
         {
             File.Create(file).Close();
