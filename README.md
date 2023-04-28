@@ -11,7 +11,7 @@ Install as Nuget (search for **SimpleJsonDb**), find it or [nuget.org](https://w
 - Add to a property the [JsonKey] attribute (optional if there is a property named "Id"), this is used because the method *InsertUpdate* tries to update the object with same key (update). If not found then it insert at the end of the list
 
 ~~~csharp
-internal record User([property: JsonKey]string Name, string Email);
+record User([property: JsonKey]string Name, string Email);
 record Car(string Id, string Serial); //automatically consider "Id" as key for the object
 
 
