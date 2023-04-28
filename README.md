@@ -17,7 +17,7 @@ record Car(string Id, string Serial); //automatically consider "Id" as key for t
 
 var user = new User("Paolo Cattaneo", 31);
 var car = new Car("Dacia Sandero", "123456");
-var context = new JsonContext("C:\pathto\data");
+var context = new JsonContext("C:/pathto/data");
 
 context.InsertUpdate(user); //automatically creates file "user.json" in data folder
 context.InsertUpdate(car);
